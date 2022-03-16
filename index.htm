@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درگاه پرداخت پاسارگاد</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="contatiner" id="app">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="header-site">
+                    <h3 class="title-text">اطلاعات پذیرنده:</h3>
+                    </br>
+                    <div class="logos">
+                        <img src="./icons/admin-site.svg" alt="پذیرنده">
+                    </div>
+                    <div class="">
+                        <p>پذیرنده: شرکت فلان فلان</p>
+                        <p>نام محصول: یک چیزی</p>
+                        <p>مبلغ قابل پرداخت: 400000000 ریال</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="data">
+                    <h3 class="title-text">اطلاعات پرداخت:</h3>
+                    </br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>شماره کارت:</p>
+                            <input type="number" name="cardNumber" maxlength="16" class="filedInput">
+                            </br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>شناسه CVV2:</p>
+                            <input type="number" name="cvv2" maxlength="4" class="filedInput">
+                            </br>
+                        </div>
+                        <div class="col-md-4">
+                            <p>رمز دوم کارت:</p>
+                            <input type="number" name="cardNumber" class="filedInput">
+                            </br>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="getIstaPassword" v-on:click="istaPassword()">درخواست رمز پویا</button>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>تاریخ انقضا</p>
+                            <p>ماه:</p>
+                            <input type="number" name="cardNumber" class="filedInput">
+                            </br>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="col-md-1">
+                            <p>سال:</p>
+                            <input type="number" name="cardNumber" class="filedInput">
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>کد امنیتی:</p>
+                            <b>2616</b>
+                            <input type="number" name="cardNumber" class="filedInput">
+                            </br>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="save">پرداخت</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="data">
+                    <h3 class="title-text">قوانین خرید:</h3>
+                    <ul>
+                        <li v-style="styles" v-for="x in tags"> {{x}} </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="./js/vue.js"></script>
+<script>
+    var application = new Vue({
+        el: "#app",
+        data: {
+            tags: new Array("1- بعد از پرداخت نهایی فاکتور خرید برای شما صادر می شود.", "2- زمانی مبلغ به شما عودت داده می شود که مبلغ به حساب شرکت پرداخت نشده باشد یا بیش از آن باشد.", "3- در صورتی که تا به حال رمز پویا کارت خود را فعالسازی نکرده اید، لطفا به بانک مورد نظر مراجعه کرده و رمز پویا خود را فعال کنید.", "5- صفا باشه"),
+            styles: {color: "red"},
+            message: "Hello KosKesh",
+            show: false,
+        },
+        methods: {
+            istaPassword: () => {
+                var message = "رمز پویا برای شما ارسال شد";
+                alert(message);
+                show = "Hello";
+            }
+        }
+    });
+</script>
+</html>

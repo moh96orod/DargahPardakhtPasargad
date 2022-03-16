@@ -1,0 +1,133 @@
+body {
+    direction: rtl;
+    font-family: Vazir;
+    background-image: url("http://localhost/PasargadDargah/icons/index-background.png");
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.title-text {
+    background-color: crimson;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.still {
+    font-size: 14px;
+
+}
+
+.header-site {
+    text-align: center;
+    float: left;
+    background-image: url("http://localhost/PasargadDargah/icons/background2.svg");
+    font-family: vazir;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.logos {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.data {
+    /* padding-top: 200px; */
+    font-family: Vazir;
+    background-image: url("http://localhost/PasargadDargah/icons/background2.svg");
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.bank-recive {
+    /* padding-top: 190px;  */
+    font-family: vazir;
+}
+
+legend {
+    border: 3px solid rgb(243, 6, 6);
+    border-radius: 100px;
+    text-align: center;
+    background-color: white;
+}
+
+fieldset {
+    border: 3px solid rgb(253, 253, 253);
+    ;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.data-product {
+    text-align: center;
+}
+
+.logos2 {
+    border-radius: 100px;
+
+}
+
+.extention {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+/* .extention > p {
+    border-radius: 100px;
+    border: 3px solid rgb(250, 250, 250);
+    border-right-color: red;
+    border-left-color: blue;
+} */
+
+.filedInput {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.getIstaPassword {
+    background-color: aquamarine;
+    color: black;
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+}
+
+.save {
+    background-color: crimson;
+    color: white;
+    border: 3px solid crimson;
+    border-radius: 10px;
+    font-family: Vazir;
+    width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        display: block;
+        text-align: center;
+        padding-top: 4px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .header-site {
+        width: 100%;
+    }
+}
